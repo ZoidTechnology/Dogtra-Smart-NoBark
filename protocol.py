@@ -182,4 +182,4 @@ def parse(uuid: str, message: bytes):
         if detector.detect(uuid, message):
             return detector.type, _parse(message, detector.fields)
 
-    raise Exception("Unknown message")
+    raise Exception("Unknown message type.")
